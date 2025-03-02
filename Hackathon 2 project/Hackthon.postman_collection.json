@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "bfa3cd86-8684-4abe-a35e-9e0385087c43",
+		"name": "Hackthon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40324338"
+	},
+	"item": [
+		{
+			"name": "Add to cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product\": \"1\",\r\n  \"quantity\":\"Samsung galaxy s6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demoblazeUrl}}/cart.html",
+					"host": [
+						"{{demoblazeUrl}}"
+					],
+					"path": [
+						"cart.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"brajmohan@gmail.com\",\r\n  \"password\": \"brajmohan1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demoblazeUrl}}/login.html",
+					"host": [
+						"{{demoblazeUrl}}"
+					],
+					"path": [
+						"login.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check out",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartId\": \"cart123\",\r\n  \"paymentInfo\": {\r\n    \"cardNumber\": \"4111111111111111\",\r\n    \"expiryDate\": \"12/25\",\r\n    \"cvv\": \"123\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demoblazeUrl}}/cart.html",
+					"host": [
+						"{{demoblazeUrl}}"
+					],
+					"path": [
+						"cart.html"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
